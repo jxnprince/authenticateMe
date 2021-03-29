@@ -1,6 +1,6 @@
 const express = require('express')
 const asyncHandler = require('express-async-handler');
-const { check } = require('express-validator'); // don't need validationResult since we're using custom handler instead
+const { check } = require('express-validator'); // don't need validationResult since using custom handler
 
 const { setTokenCookie, restoreUser } = require('../../utils/auth');
 const { User } = require('../../db/models');
@@ -12,14 +12,11 @@ const router = express.Router();
 router.get('/', restoreUser, (req, res) => {
   const { user } = req; // pull user out of req (set by restoreUser)
 
-  if(user) {
-    return res.json({ user: user.toSafeObject() }); // return user if exists
-  } else {
-    return res.json({}) // else return an empty obj
-  }
+  if(user) return res.json({ user: user.toSafeObject() }); //If user exists, return them
+  else return res.json({}) // else return an empty obj
 })
 
-// Login validation middleware functions; stored sequentially in an array
+// Login validators
 const validateLogin = [
   check('credential')
     .exists({checkFalsy: true})

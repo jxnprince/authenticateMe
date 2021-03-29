@@ -40,7 +40,7 @@ input:focus {
 	border-bottom-color: blueviolet;
 }
 
-button {
+/* button {
 	border: 2px solid white;
 	background-color: rgb(233, 225, 225);
 	border-radius: 3px;
@@ -49,4 +49,4 @@ button {
 	text-transform: uppercase;
 	transition: background-color .25s, color .25s;
 	cursor: pointer;
-}
+} */

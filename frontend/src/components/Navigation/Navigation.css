@@ -1,11 +1,11 @@
 /* Site Color Swatches*/
-:root {
+/* :root {
 	--darkpink: #bf0f70;
 	--pink: #d91193;
 	--slate: #8d90b6;
 	--teal: #224e55;
 	--orange: #f2ae72;
-}
+} */
 
 /* .page-wrap {
   max-width: 1366px;
@@ -14,7 +14,7 @@
   margin-top: -64px;
 } */
 
-.full-width-nav {
+/* .full-width-nav {
 	position: fixed;
 	height: 64px;
 	background: linear-gradient(var(--teal), var(--slate));
@@ -22,10 +22,11 @@
 	top: 0px;
 	left: 0px;
 	width: 100%;
-	/* display: flex; */
-	align-content: center;
-}
+	/* display: flex; 
+align-content: center;
+}*\
 
+*/
 /* .navBar {
 display: flex;
 justify-content: space-between;
@@ -65,13 +66,13 @@ z-index: 3;
 } */
 
 
-.nav__link-container {
+/* .nav__link-container {
 	color: var(--orange);
 	display: flex;
 	justify-content: space-around;
 	align-content: center;
 	padding-top: 20px;
-}
+} */
 
 /* .nav__link-container:hover a{
 color: var(--yellow);
@@ -81,9 +82,9 @@ color: var(--yellow);
 opacity: 50%;
 } */
 
-.nav__link {
+/* .nav__link {
 	color: black;
-}
+} */
 
 /*
 .nav__link-:hover {
