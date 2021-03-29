@@ -3,7 +3,7 @@ import Cookies from 'js-cookie'; // extracts XSRF-TOKEN from cookie value
 export const csrfFetch = async (url, options = {}) => {
   // set options.method to 'GET' if there is no method
   options.method = options.method || 'GET';
-  // set options.headers to an empty object if there is no headers
+  // set options.headers to an empty object if there are no headers
   options.headers = options.headers || {};
 
   // if the options.method is not 'GET', then set the "Content-Type" header to
@@ -25,6 +25,4 @@ export const csrfFetch = async (url, options = {}) => {
   return res;
 }
 
-export const restoreCSRF = () => {
-  return csrfFetch('api/csrf/restore');
-}
+export const restoreCSRF = () => csrfFetch('api/csrf/restore');

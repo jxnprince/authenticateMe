@@ -49,7 +49,7 @@ function SignupFormPage() {
         />
       </label>
        <label>
-        Username or Email
+        Email
         <input
           type="text"
           value={email}

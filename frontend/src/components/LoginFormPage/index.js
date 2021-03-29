@@ -15,9 +15,7 @@ function LoginFormPage() {
   const [errors, setErrors] = useState([]);
 
   // if already logged in, redirect home
-  if (sessionUser) return (
-    <Redirect to="/" />
-  );
+  if (sessionUser) return (<Redirect to="/" />);
 
   // form submit handler
   const handleSubmit = (e) => {

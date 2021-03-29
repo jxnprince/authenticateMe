@@ -1,24 +1,11 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-:root {
-	--darkpink: #bf0f70;
-	--pink: #d91193;
-	--slate: #8d90b6;
-	--teal: #224e55;
-	--orange: #f2ae72;
-}
-
-body {
-	display: flex;
-	justify-content: center;
-	background-color: var(--slate)
-}
 
 form {
 	background-color: rgb(184, 178, 178);
 	width: 250px;
 	padding: 25px;
-	margin-top: 50px;
+	margin-top: 0;
 	text-align: center;
 	border-radius: 5px;
 }
@@ -49,4 +36,4 @@ button {
 	text-transform: uppercase;
 	transition: background-color .25s, color .25s;
 	cursor: pointer;
-} */
+}

@@ -7,7 +7,7 @@ import './Navigation.css';
 
 function Navigation({ isLoaded }){
   const sessionUser = useSelector(state => state.session.user);
-  console.log(sessionUser)
+  // console.log(sessionUser)
   let sessionLinks; // declare variable to store which links to render
 
   if (sessionUser) { // if logged in, only show Profile button
