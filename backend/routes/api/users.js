@@ -30,14 +30,19 @@ router.post("/", validateSignup, asyncHandler(async (req, res) => {
     const { email, password, username } = req.body;
     const user = await User.signup({ email, username, password });
     await setTokenCookie(res, user);
-    return res.json({
-      user,
-    });
+    // return res.json({ user });
+    res.redirect('/:id')
   })
 );
 
-//User Profile Route
+//User Profile
+//localhost:5000/api/users/:id
 router.get('/:id', asyncHandler(async (req, res) => {
   const userId = await parseInt(req.params.id, 10);
+  const userInfo = await User.findByPk(userId)
+  console.log(userInfo)
+  return res.json({userInfo})
 }))
+
+
 module.exports = router;
