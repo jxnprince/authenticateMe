@@ -20,36 +20,27 @@ module.exports = (sequelize, DataTypes) => {
       email: {
         type: DataTypes.STRING,
         allowNull: false,
-        validate: {
-          len: [3, 256]
-        }
+        validate: { len: [3, 256] }
       },
       hashedPassword: {
         type: DataTypes.STRING.BINARY,
         allowNull: false,
-        validate: {
-          len: [60, 60]
-        }
+        validate: { len: [60, 60] }
       }
     },
     {
       defaultScope: {
-        attributes: {
-          exclude: ['hashedPassword', 'email', 'createdAt', 'updatedAt']
-        }
+        attributes: { exclude: ['hashedPassword', 'email', 'createdAt', 'updatedAt'] }
       },
       scopes: {
-        currentUser: {
-          attributes: { exclude: ['hashedPassword'] }
-        },
-        loginUser: {
-          attributes: {}
-        }
+        currentUser: { attributes: { exclude: ['hashedPassword'] } },
+        loginUser: { attributes: {} }
       }
     }
   );
   User.associate = function (models) {
-    // associations can be defined here
+    User.hasMany(models.Comment, { foreignKey: 'userId' })
+    User.hasMany(models.Track,   { foreignKey: 'userId' })
   };
   User.prototype.toSafeObject = function () {
     // remember, this cannot be an arrow function

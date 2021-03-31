@@ -3,17 +3,12 @@ const router = express.Router();
 
 const db = require("../../db/models");
 const { Track } = db;
-const { asyncHandler, csrfProtection } = require("./utils.js");
-
-// router.get("/", csrfProtection, asyncHandler(async (req, res) => {
-//     const tracks = await Track.findAll({limit: 5});
-//     return res.json({ tracks });
-//   })
-// );
+const { asyncHandler, csrfProtection } = require("../../utils/utils");
 
 router.get("/:id", csrfProtection, asyncHandler(async (req, res) => {
-    const track = await Track.findByPk(req.params.id);
-    return res.json({ track });
+  const trackId = await parseInt(req.params.id, 10);
+  const track = await Track.findOne({ where: { id: trackId }})
+    if(track)return res.json({ track:track });
   })
 );
 

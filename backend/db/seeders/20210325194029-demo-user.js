@@ -6,300 +6,55 @@ module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.bulkInsert('Users', [
       {
-        email: 'demo@test.gov',
+        email: 'demo@example.com',
         username: 'demoUser',
         hashedPassword: bcrypt.hashSync('password'),
       },
       {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
+        email: 'kglw@flightless.com',
+        username: 'King Gizzard and The Lizard Wizard',
         hashedPassword: bcrypt.hashSync('password'),
       },
       {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
+        email: 'beck@odelay.com',
+        username: 'Beck',
         hashedPassword: bcrypt.hashSync('password'),
       },
       {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
+        email: 'bRainbow@planetjunior.net',
+        username: 'Babe Rainbow',
         hashedPassword: bcrypt.hashSync('password'),
       },
       {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
+        email: 'timM@hotmail.com',
+        username: 'Tim Maia',
         hashedPassword: bcrypt.hashSync('password'),
       },
       {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
+        email: 'boards@sixtyten.com',
+        username: 'Boards of Canada',
         hashedPassword: bcrypt.hashSync('password'),
       },
       {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
+        email: 'louie@fujiApple.com',
+        username: 'Louie Zong',
         hashedPassword: bcrypt.hashSync('password'),
       },
       {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
+        email: 'rosetta@riverside.net',
+        username: 'Sister Rosetta Tharpe',
         hashedPassword: bcrypt.hashSync('password'),
       },
       {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
+        email: 'bmb@undyingThirst.net',
+        username: 'Black Market Brass',
         hashedPassword: bcrypt.hashSync('password'),
       },
       {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
+        email: 'factsForWhatever@waste.uk',
+        username: 'radiohead',
         hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
-      {
-        email: faker.internet.email(),
-        username: faker.internet.userName(),
-        hashedPassword: bcrypt.hashSync('password'),
-      },
+      }
     ], {});
   },
 
