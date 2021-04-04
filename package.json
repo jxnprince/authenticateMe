@@ -22,5 +22,10 @@
     "bugs": {
         "url": "https://github.com/jxnprince/middle8/issues"
     },
-    "homepage": "https://github.com/jxnprince/middle8/#readme"
+    "homepage": "https://github.com/jxnprince/middle8/#readme",
+    "dependencies": {
+        "@oclif/command": "^1.5.18",
+        "heroku": "^7.51.0",
+        "heroku-cli": "^7.0.9"
+    }
 }
