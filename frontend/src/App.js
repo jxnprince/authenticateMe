@@ -1,36 +1,32 @@
-import React, { useState, useEffect } from 'react';
-import { Route, Switch } from 'react-router-dom';
-import { useDispatch } from 'react-redux'
-
-import LoginFormPage from './components/LoginFormPage';
-import SignupFormPage from './components/SignupFormPage';
-import Navigation from "./components/Navigation";
-import * as sessionActions from './store/session';
+import React, { useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { Route, Switch } from "react-router-dom";
+import * as sessionActions from "./store/session";
+import Splash from "./components/Splash";
+import Dashboard from "./components/Dashboard";
+import SongPage from "./components/SongPage";
 
 function App() {
   const dispatch = useDispatch();
   const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(()=> {
+  useEffect(() => {
     dispatch(sessionActions.restoreUser()).then(() => setIsLoaded(true));
-  }, [dispatch])
+  }, [dispatch]);
 
   return (
     <>
-      <Navigation isLoaded={isLoaded} />
+      {/* <Navigation isLoaded={isLoaded} /> */}
       {isLoaded && (
         <Switch>
           <Route exact path="/">
-            <LoginFormPage />  {/* Placeholder component */ }
+            <Splash isLoaded={isLoaded} />
           </Route>
-          <Route path="/login">
-            <LoginFormPage />
+          <Route path="/dashboard">
+            <Dashboard isLoaded={isLoaded} />
           </Route>
-
-          <Route path="/signup">
-            <SignupFormPage />
+          <Route path="/song/:id"
+            component={(props) => <SongPage isLoaded={isLoaded} {...props} />}>
           </Route>
-
         </Switch>
       )}
     </>

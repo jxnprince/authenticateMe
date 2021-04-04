@@ -1,76 +1,177 @@
-/* Site Color Swatches*/
+.navbarContainer {
+    /* position: fixed; */
+    top: 0;
+    width: 70%;
+    line-height: 3.2;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    margin: 0px -16px;
+    z-index: 1000000;
+    left: 15%;
+}
 
-/* .page-wrap {
-  max-width: 1366px;
-  margin: auto;
-  background-color: rgba(0, 0, 0, 0.35);
-  margin-top: -64px;
+
+/* .dark-background {
+    background: #333;
 } */
 
-/* Full navbar */
-.full-width-nav {
-  background-color: #7e9e99;
-  border: solid 1px #387080;
-  border-radius: 2%;
-  position: fixed;
-  height: 64px;
-  width: 100%;
-  display: flex;
-  align-content: center;
+.container {
+    width: 70%;
+    margin: 0 auto;
 }
 
-/* Contains the Logo as well as the Search Bar */
-/* .navBar__left {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.navbar {
+    font-family: "Overpass";
+    /* overflow: hidden; */
+    position: fixed;
+    top: 0;
+    background-color: #333;
+    height: 46px;
+    width: 70%;
+    min-width: 1240px;
+    line-height: 3.2;
+    font-size: 14px;
+    display: flex;
+    /* justify-content: center; */
+    z-index: 1000;
+    max-height: 46px;
+}
+
+.navbar-logo {
+    background-size: 100% 100%;
+    width: 84px;
+    height: 100%;
+}
+
+.navbar-linkedin {
+    width: 103px;
+    text-align: center;
+    border-right: 1px solid black;
+}
+
+.navbar-left-link {
+    width: 103px;
+    text-align: center;
+    border-right: 1px solid black;
+}
+
+.navbar-search {
+    width: auto;
+    padding: 0 10px;
+    display: flex;
+    flex: 1 auto;
+    position: relative;
+    align-items: center;
+    flex: 1 auto;
+}
+
+.navbar-search-input {
+    height: 26px;
+    width: 100%;
+    background: lightgray;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding-left: 8px;
+    font-size: 14px;
+    transition: background 0.5s;
+}
+
+.navbar-search-button {
+    width: 15px;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    height: 15px;
+    border-radius: 0 5px 5px 0;
+    position: absolute;
+    overflow: visible;
+    cursor: pointer;
+    top: 14px;
+    right: 25px;
+    color: gray;
+}
+
+.navbar-search-button:focus {
+    background: transparent;
+    color: gray;
+}
+
+.upgrade {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.upgrade:hover {
+    color: #be955c;
+}
+
+.navbar-search-button svg {
+    font-size: 14px;
+}
+
+.navbar-search-input:focus {
+    background: white;
+}
+
+.navbar-search-input:not(:focus) {
+    background: rgb(230, 230, 230);
+}
+
+.navbar-search-input::placeholder {
+    color: rgb(150, 150, 150);
+}
+
+.navbar-right-link {
+    width: 65px;
+    text-align: center;
+}
+
+.navbar-user {
+    width: 140px;
+    position: relative;
+    text-align: center;
+}
+
+
+/* .navbar-user:focus {
+    outline: none;
+    background: black;
+    color: cyan;
 } */
 
-/* .logo {
-  max-width: 56px;
-  margin-right: 10px;
-} */
-
-.navBar__right {
-  width: 550px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.navbar-profile-pic {
+    background: black;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
-.navBar__right-unauth {
-  width: 40%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+.navbar-username {
+    margin-left: 43px;
+    color: #ccc;
+    padding-right: 10px;
 }
 
-
-.nav__link-container {
-  color: var(--orange);
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  padding-top: 20px;
+.navbar-icon-button {
+    width: 46px;
+    padding: 0;
+    /* cursor: pointer; */
+    position: relative;
+    font-size: 16px;
+    background: transparent;
+    border: 0;
+    color: #ccc;
 }
 
-.footer {
-  color: white;
-  display: flex;
-  justify-content: center;
-  flex: auto;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+.navbar-icon-button:focus {
+    outline: 0;
 }
 
-
-.nav-footer__row {
-  font-size: 1.2em;
-  flex-grow: .07;
-}
-
-.icon__spacer {
-  padding: 0 8px;
+.navbar-icon-button:nth-of-type(2) {
+    font-size: 18px;
 }

@@ -13,9 +13,8 @@ Users who use Middle 8 will be able to:
 	•Make a user profile with 
 		•a list of creator tracks
 		•user information
-		•user playlists
+
 		•an associated profile image
 	•Upload tracks to share them with a community of muisic makers
 		•Tracks can receive comments from the community
 		•be deleted
-		•added to personal playlists

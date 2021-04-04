@@ -26,26 +26,17 @@ const validateSignup = [
 ];
 
 // Sign up
-router.post("/", validateSignup, asyncHandler(async (req, res) => {
+router.post(
+  "/",
+  validateSignup,
+  asyncHandler(async (req, res) => {
     const { email, password, username } = req.body;
     const user = await User.signup({ email, username, password });
     await setTokenCookie(res, user);
-    // return res.json({ user });
-    res.redirect('/:id')
+    return res.json({
+      user,
+    });
   })
 );
-
-//User Profile
-//localhost:5000/api/users/:id
-router.get('/:id', asyncHandler(async (req, res) => {
-  const userId = await parseInt(req.params.id, 10);
-  const user = await User.findOne({ where: { id: userId }})
-  if (user) return res.json({ user: user })
-  else {
-    console.log(`User with Id of ${userId} does not exsit!`)
-    return
-  }
-}))
-
 
 module.exports = router;

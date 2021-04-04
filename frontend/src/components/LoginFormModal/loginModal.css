@@ -1,0 +1,107 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 400px;
+    /* height: 500px; */
+    margin: 0 auto;
+    top: 8%;
+    padding: 15px;
+    animation-name: scrolldown;
+    animation-duration: 0.5s;
+}
+
+input.input {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 7px 8px;
+    border-radius: 5px;
+    width: -webkit-fill-available;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+button.login-button {
+    background: #be955c;
+    color: white;
+    border: 1px solid #be955c;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 10px 15px;
+    height: 40px;
+    border-radius: 3px;
+}
+
+button.demo-login-button {
+    background: #be955c;
+    color: white;
+    border: 1px solid #be955c;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 10px 15px;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: all 500ms ease-in-out;
+    z-index: 2;
+}
+
+.ReactModal__Overlay--after-open {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.ReactModal__Overlay--before-close {
+    opacity: 0;
+    transform: translateX(-100px);
+}
+
+.modal-box {
+    display: flex;
+    position: fixed;
+}
+
+.auth-method-separator {
+    margin: 1em auto;
+    position: relative;
+    text-align: center;
+    font-family: Overpass;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.welcome-span {
+    font-family: Overpass;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 26px;
+}
+
+.before-or {
+    display: inline-block;
+    position: relative;
+    right: 30px;
+    width: 160px;
+    top: 100px;
+    border-top: 1px solid #333;
+    content: " ";
+    position: absolute;
+    top: 0.7em;
+}
+
+.after-or {
+    display: inline-block;
+    position: relative;
+    left: 30px;
+    width: 160px;
+    top: 100px;
+    border-top: 1px solid #333;
+    content: " ";
+    position: absolute;
+    top: 0.7em;
+}
