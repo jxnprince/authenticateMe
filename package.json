@@ -1,8 +1,11 @@
 {
     "name": "middle8",
-    "version": "1.0.0",
-    "description": "",
     "main": "index.js",
+    "description": "",
+    "version": "1.0.0",
+    "engines": {
+        "node": "12.18.4"
+    },
     "scripts": {
         "heroku-postbuild": "npm run build --prefix frontend",
         "install": "npm --prefix backend install backend && npm --prefix frontend install frontend",
@@ -24,8 +27,14 @@
     },
     "homepage": "https://github.com/jxnprince/middle8/#readme",
     "dependencies": {
+        "@heroku/buildpack-registry": "^1.0.1",
         "@oclif/command": "^1.5.18",
+        "async-file": "^2.0.2",
+        "cli-ux": "^4.9.3",
+        "got": "^8.3.2",
         "heroku": "^7.51.0",
-        "heroku-cli": "^7.0.9"
+        "heroku-cli": "^7.0.9",
+        "phoenix": "^1.5.8",
+        "valid-url": "^1.0.9"
     }
 }

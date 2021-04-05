@@ -77,7 +77,7 @@ function Splash({ isLoaded }) {
 
       <div>
         <div className="splash-trending-container">
-          <h3>See what's trendng~!</h3>
+          <h3>See what's trending!</h3>
           <div>
             <div className="splash-trending-tracks">
               {songsState.map((song) => (
